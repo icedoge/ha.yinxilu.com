@@ -71,8 +71,7 @@
             <iframe
               title="vimeo-player"
               src="https://player.vimeo.com/video/345032569"
-              width="640"
-              height="360"
+              width="100%"
               frameborder="0"
               allowfullscreen
             ></iframe>
@@ -81,4 +80,13 @@
       </main>
     </div>
   </body>
+  <script>
+    var iframe = document.getElementsByTagName("iframe")[0];
+    var width = iframe.clientWidth;
+    iframe.style.height = (width * 36) / 64 + "px";
+    window.on("resize", function() {
+      var width = iframe.clientWidth;
+      iframe.style.height = (width * 36) / 64 + "px";
+    });
+  </script>
 </html>

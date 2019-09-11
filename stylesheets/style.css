@@ -117,7 +117,7 @@ input:focus {
 }
 
 main {
-  padding: 85px 0 20px 0;
+  padding: 105px 0 20px 0;
   margin: 0 4%;
   background-color: #fff;
   transition: 0.5s;
@@ -395,6 +395,10 @@ body.home {
 
 .post {
   margin: 0 auto;
+}
+
+article.post {
+  text-align: center;
 }
 
 .content_text h1 {
